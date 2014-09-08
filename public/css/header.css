@@ -1,0 +1,146 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* 		  */
+/* HEADER */
+/*		  */
+
+.header {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 180px;
+	background: #edeee8;
+}
+	.top-header-info {
+		display: block;
+		position: relative;
+		height: 100px;
+		width: 100%;
+		/*background: cyan;*/
+	}
+		.logo-wrapper {
+			display: inline-block;
+			position: relative;
+			float: left;
+			width: 250px;
+			height: 100px;
+			/*background: red;*/
+		}
+			.logo {
+				margin: 15px;
+			}
+		.login-wrapper {
+			display: inline-block;
+			position: relative;
+			float: right;
+			width: 470px;
+			height: 100px;
+			margin: 0;
+			padding: 0;
+			/*background: yellow;*/
+		}
+			.login-wrapper li {
+				display: inline-block;
+				position: relative;
+				float: right;
+				width: 130px;
+				height: 25px;
+				margin: 35px 5px;
+				border: 1px solid black;
+				font-size: 10px;
+				text-align: center;
+				/*background: red;*/
+				border: 1px solid #8892b0;
+			}
+				.login-wrapper li:hover {
+					cursor: pointer;
+					color: white;
+					background: #8892b0;
+				}
+				.login-wrapper li:hover span {
+					color: white;
+				}
+				.login-wrapper li span {
+					display: inline-block;
+					position: relative;
+					margin: 6px;
+					color: #8892b0;
+					/*background: lime;*/
+
+				}
+.main-nav {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 750px;
+	height: 50px;
+	left: 0;
+	right: 0;
+	/*background: lime;*/
+}
+	.main-nav ul li {
+		display: inline-block;
+		float: left;
+		list-style: none;
+		color: white;
+		margin: 5px;
+		width: 130px;
+		height: 40px;
+		text-align: center;
+		background: #4adfc2;
+	}
+		.main-nav:hover {
+			cursor: pointer;
+		}
+		.main-nav li span {
+			display: inline-block;
+			position: relative;
+			padding-top: 12px;
+			color: white;
+		}
+		.main-nav li span a {
+			color: white;
+			text-decoration: none
+		}
+
+.main-body {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 1840px;
+	background: #373b47;
+}
+.main-body.index {
+	height: 1840px;
+}
+.main-body.competition {
+	height: 2600px;
+}
+.main-body.accounts {
+	height: auto;
+}
+.main-body.rules {
+	height: 4300px;
+}
+
+/* image test */
+.index-image-test {
+	display: inline-block;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 1000px;
+}
+
+.footer {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: #4adfc2;
+}
