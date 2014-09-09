@@ -5,7 +5,7 @@ html, body {
 }
 
 /* 		  */
-/* HEADER */
+/* ================================================ HEADER */
 /*		  */
 
 .header {
@@ -107,15 +107,17 @@ html, body {
 			text-decoration: none
 		}
 
+/* ================================================ main body */
 .main-body {
 	display: inline-block;
 	position: relative;
 	width: 100%;
 	height: 1840px;
 	background: #373b47;
+	color: white;
 }
 .main-body.index {
-	height: 1840px;
+	height: inherit;
 }
 .main-body.competition {
 	height: 2600px;
@@ -137,10 +139,157 @@ html, body {
 	width: 1000px;
 }
 
+/* ================================================ splash area */
+.about-of-splash {
+	
+}
+
+.splash-carousel {
+	
+}
+	/* splash about */
+	.splash-carousel about {
+		
+	}
+	
+		.splash-carousel about img {
+			
+		}
+		
+		.splash-carousel about description {
+			
+		}
+		
+		.splash-carousel about description h2 {
+			
+		}
+		
+		.splash-carousel about description p {
+			
+		}
+	
+	/* splash ofcomm */
+	.splash-carousel ofcommunity {
+		
+	}
+	
+		.splash-carousel ofcommunity img {
+			
+		}
+		
+		.splash-carousel ofcommunity description {
+			
+		}
+		
+		.splash-carousel ofcommunity description h2 {
+			
+		}
+		
+		.splash-carousel ofcommunity description p {
+			
+		}
+
+	
+	/* splash toolkits */
+	.splash-carousel toolkits {
+		
+	}
+	
+		.splash-carousel toolkits img {
+			
+		}
+		
+		.splash-carousel toolkits description {
+			
+		}
+		
+		.splash-carousel toolkits description h2 {
+			
+		}
+		
+		.splash-carousel toolkits description p {
+			
+		}
+	
+	.readmore {
+		
+	}
+	
+	/* splash ellipses / indicators */
+	carousel-viewport {
+		
+	}
+	
+		.carousel-viewport {
+			list-style: none;
+			display: inline-flex;
+		}
+		
+		.carousel-viewport li{
+			/* background: red; */
+			background: black;
+			width: 10px;
+			height: 10px;;
+			border-radius: 20px;
+		}
+
+/* ================================================ featured projects */
+
+.featured-projects {
+	
+	background: #ff777b;
+	
+}
+
+
+/* ================================================ gallery of projects */
+
+.gallery-of-projects {
+	
+	background: #466085;
+	
+}
+
+
 .footer {
 	display: inline-block;
 	position: relative;
 	width: 100%;
-	height: 50px;
+	/* height: 50px; */
 	background: #4adfc2;
+	color: #466085;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
