@@ -1,6 +1,9 @@
 <html>
 <head>
 	<title>OFOpen</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/project_page.css">
 </head>
@@ -11,9 +14,9 @@
 				<img class="logo" src="assets/ofopen_logo.png"/>
 			</div>
 			<ul class="login-wrapper">
-				<li class="sign-up"><span>Sign Up/Login</span></li>
-				<li class="terms"><span>Terms + Conditions</span></li>
-				<li class="language"><span>Language</span></li>
+				<li class="sign-up"><span><a href="competition.html">Sign Up/Login</a></span></li>
+				<li class="terms"><span><a href="competition.html">Terms + Conditions</a></span></li>
+				<li class="language"><span><a href="competition.html">Language</a></span></li>
 			</ul>
 		</div>
 		<div class="main-nav">
@@ -30,7 +33,7 @@
 		<section class="about-of-splash">
 			<div class="splash-carousel about">
 				<img class="" src="assets/images/splash-about.png">
-				<div class="about description">
+				<div class="description">
 					<h2>About The Open</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis eget enim vehicula, facilisis eleifend erat. Sed id suscipit enim, quis convallis justo. Proin arcu dui, aliquet eu porta ac, commodo et quam. Nunc sed dolor justo. Proin vehicula, ante non ornare venenatis, nisl dui venenatis nisi, vel pellentesque lectus arcu eget turpis. Pellentesque pellentesque est quis leo hendrerit elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ut vestibulum elit. Duis at blandit erat.</p>
 					<a class="readmore" href="#goToThisPage">Read More...</a>
@@ -58,29 +61,29 @@
 				
 			</div>
 			
-			<ol class="carousel-viewport">
+			<ol class="carousel-indicators">
 				<li><a href="#" class="active"></a></li>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
 			</ol>
 			<div class="splash-thumbs">
-				<div class="thumb active">
-					<img src="assets/images/splash_thumb-about.png">
+				<div class="thumb" id="about">
+<!-- 					<img src="assets/images/splash_thumb-about.png"> -->
 					<div class="thumb-overlay">
 					<h4 class="splash-caption">About</h4>
 					</div>
 				</div>
-				<div class="thumb">
+				<div class="thumb" id="community">
 					<img src="assets/images/splash_thumb-ofCommunity.png">
 					<div class="thumb-overlay">
 					<h4 class="splash-caption">OF Community</h4>
 				</div>
-				<div class="thumb">
+				<div class="thumb" id="toolkits">
 					<img src="assets/images/splash_thumb-toolkits.png">
 					<div class="thumb-overlay">
 					<h4 class="splash-caption">Toolkits</h4>
 				</div>
-			</div>
+			</div><!-- .splash-thumbs -->
 			
 		</section><!-- .about-of-splash -->
 		
@@ -132,7 +135,7 @@
 					<h4>Team Name</h4>
 				</div>				
 			</div>
-		</section><!-- .featured-projects -->
+		</section><!-- .gallery-of-projects -->
 		
 		
 	</section><!-- .main-body .index -->
