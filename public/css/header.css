@@ -1,7 +1,8 @@
 html, body {
-	margin: 0;
 	padding: 0;
-	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+/* 	width: 960px; */
+	margin: 0 auto;
 }
 
 /* 		  */
@@ -104,14 +105,16 @@ html, body {
 		height: 40px;
 		text-align: center;
 		background: #4adfc2;
-	}
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+}
 		.main-nav:hover {
 			cursor: pointer;
 		}
 		.main-nav li span {
 			display: inline-block;
 			position: relative;
-			padding-top: 12px;
+			padding-top: 10px;
 			color: white;
 		}
 		.main-nav li span a {
@@ -125,7 +128,7 @@ html, body {
 	position: relative;
 	width: 100%;
 	height: 1840px;
-	background: #373b47;
+	/* 	background: #373b47; */
 	color: white;
 }
 .main-body.index {
@@ -142,6 +145,7 @@ html, body {
 }
 
 /* image test */
+/*
 .index-image-test {
 	display: inline-block;
 	position: absolute;
@@ -150,6 +154,7 @@ html, body {
 	right: 0;
 	width: 1000px;
 }
+*/
 
 /* 			*/
 /* USER NAV */
@@ -186,97 +191,117 @@ li.user-nav {
 
 /* ================================================ splash area */
 .about-of-splash {
-	
+	background: #edeee8;
 }
 
 .splash-carousel {
-	
+	width: 860px;
+	height: 328px;
+	margin: 0 auto;
 }
 	/* splash about */
-	.splash-carousel about {
-		
+	.splash-carousel.about {
+		background: #24ad93;
 	}
-	
-		.splash-carousel about img {
-			
-		}
-		
-		.splash-carousel about description {
-			
-		}
-		
-		.splash-carousel about description h2 {
-			
-		}
-		
-		.splash-carousel about description p {
-			
-		}
 	
 	/* splash ofcomm */
-	.splash-carousel ofcommunity {
-		
+	.splash-carousel.ofcommunity {
+		background: #ff777b;
 	}
-	
-		.splash-carousel ofcommunity img {
-			
-		}
-		
-		.splash-carousel ofcommunity description {
-			
-		}
-		
-		.splash-carousel ofcommunity description h2 {
-			
-		}
-		
-		.splash-carousel ofcommunity description p {
-			
-		}
-
 	
 	/* splash toolkits */
-	.splash-carousel toolkits {
-		
+	.splash-carousel.toolkits {
+		background: #466085;
 	}
-	
-		.splash-carousel toolkits img {
-			
-		}
-		
-		.splash-carousel toolkits description {
-			
-		}
-		
-		.splash-carousel toolkits description h2 {
-			
-		}
-		
-		.splash-carousel toolkits description p {
-			
-		}
 	
 	.readmore {
-		
+		font-size: 12px;
+		float: right;
+		margin: 30px 5px 0px 0px;	}
+	
+	.description {
+		padding: 15px;
+		float: right;
+		width: 390px;
+		height: 290px;
 	}
+	
+	.description h2 {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 40px;
+		text-transform: uppercase;
+	}
+	
+	.description p {
+		margin: 0px;
+		padding: 0px;
+		font-size: 14px;
+		line-height: 1.5em;
+	}
+	
+	.description a:link { color: rgba(255, 255, 255, 0.65); }
+	.description a:visited { color: rgba(255, 255, 255, 0.35); }
+	.description a:hover { color: rgba(255, 255, 255, 1.0); }
+	.description a:active { color: rgba(255, 255, 255, 0.85); }
 	
 	/* splash ellipses / indicators */
-	carousel-viewport {
+	carousel-indicators {
 		
 	}
 	
-		.carousel-viewport {
+		.carousel-indicators {
 			list-style: none;
 			display: inline-flex;
+			margin: 20px 427px;
+			padding: 0;
 		}
 		
-		.carousel-viewport li{
+		.carousel-indicators li{
 			/* background: red; */
-			background: black;
-			width: 10px;
-			height: 10px;;
+			background: #ff777b;
+			margin: 0 10px;
+			width: 15px;
+			height: 15px;;
 			border-radius: 20px;
+			display: block;
 		}
+		
+/*splash thumbs */
+.splash-thumbs {
+	
+}
+
+.thumb {
+	display: inline;
+	width: 200px;
+	height:115px;
+}
+
+
+
+#about {
+
+}
+
+#community {
+
+}
+
+#toolkits {
+
+}
+	
+.thumb-overlay {
+	
+}
+
+.splash-caption {
+	
+}
+
+
 
 /* ================================================ featured projects */
 

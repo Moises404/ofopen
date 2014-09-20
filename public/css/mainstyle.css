@@ -1,0 +1,38 @@
+/* ================================================ MAVBAR */
+
+.navlogin {
+	min-height: 100px;
+	background-color: #edeee8;
+}
+
+.navbar-right li {
+	display: inline-block;
+	position: relative;
+	float: right;
+	width: 130px;
+	height: 25px;
+	margin: 35px 5px;
+	border: 1px solid black;
+	font-size: 10px;
+	text-align: center;
+	/*background: red;*/
+	border: 1px solid #8892b0;
+}
+
+.navbar-right li a {
+	padding: 0px;
+	height: 23px;
+}
+
+.navbar-right li a:hover {
+	cursor: pointer;
+	color: white;
+	background: #8892b0;
+}
+
+.navbar-right li a span {
+	display: inline-block;
+	position: relative;
+	margin: 6px;
+	color: #8892b0;
+	/*background: lime;*/
