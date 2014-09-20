@@ -1,0 +1,115 @@
+/* 		   */
+/* project */
+/* 		   */
+
+.team-group-wrapper {
+	width: 70%;
+	/*background: red;*/
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	height: 100%;
+}
+.team-group-info-wrapper {
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 40%;
+	height: 100%;
+	/*background: yellow;*/
+}
+	.team-group-main-info {
+		color: white;
+		width: 100%;
+		margin-top: 30px;
+		padding-bottom: 10px;
+		background: #4adfc2;
+	}
+		.team-group-main-info h3 {
+			margin: 10px;
+		}
+		.team-group-main-info h4 {
+			margin: 10px;
+		}
+		.team-group-profile {
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			margin: 30px 10px 10px 10px;
+			height: 160px;
+			overflow: hidden;
+			/*background: orange;*/
+		}
+			.team-group-profile img {
+				width: 174px;
+			}
+		.team-group-main-info img {
+			display: inline-block;
+			position: relative;
+			float: left;
+			margin-right: 5px;
+		}
+		.team-group-single-info {
+			display: inline-block;
+			position: relative;
+			float: left;
+			width: 200px;
+			height: 100px;
+			margin-top: 50px;
+			/*background: red;*/
+		}
+			.team-group-single-info span {
+				display: block;
+			}
+	.new-post {
+		width: 150px;
+		height: 50px;
+		color: white;
+		margin: 15px auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+		background: #d0454a;
+	}
+		.new-post span {
+			display: inline-block;
+			position: relative;
+			margin: 15px auto;
+		}
+
+/* TIMELINE */
+
+.team-group-timeline-wrapper {
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+	/*background: lime;*/
+}
+	.splash-image-wrapper {
+		display: inline-block;
+		position: relative;
+		margin: 30px 10px 10px 10px;
+		width: 500px;
+	}
+		.splash-image-wrapper img {
+			width: 100%;
+		}
+	.teamgroup-post {
+		color: white;
+		display: inline-block;
+		position: relative;
+		margin: 10px;
+		background: #466085;
+		width: 500px;
+	}
+		.teamgroup-post h5 {
+			margin: 10px;
+		}
+		.image-post-wrapper img {
+			width: 100%;
+		}
+		.teamgroup-post .post-text {
+			margin: 10px;
+		}

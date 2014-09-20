@@ -1,0 +1,81 @@
+<!-- views/home.handlebars -->
+{{#if user}}
+  <section class="main-body accounts">
+    <!-- TEAM GROUP WRAPPER -->
+    <div class="team-group-wrapper">
+      <article class="team-group-info-wrapper">
+        <div class="team-group-main-info">
+          {{#if user.projectname}}
+            <h3>{{user.projectname}}</h3>
+          {{else}}
+            <h3>Team Group Name</h3> 
+          {{/if}}
+          <h4>University Name</h4>
+
+          <div class="team-group-profile">
+            <img class="team-group-profile-photo" src="{{user.avatar}}"/>
+            <div class="team-group-single-info">
+              <span>{{user.username}}</span>
+              <span>Last Name</span>
+              <span>email@email.com</span>
+              <span>Portfolio URL Link</span>
+            </div>
+          </div>
+          <div class="team-group-profile">
+            <img class="team-group-profile-photo" src="assets/images/profile_photo2.png"/>
+            <div class="team-group-single-info">
+              <span>First Name</span>
+              <span>Last Name</span>
+              <span>email@email.com</span>
+              <span>Portfolio URL Link</span>
+            </div>
+          </div>
+
+          <div class="new-post"><span>NEW POST</span></div>
+        </div>
+        <div class="team-group-github"></div>
+        <div class="team-group-tags"></div>
+        <div class="team-group-status"></div>
+      </article>
+
+      <!-- TEAM TIMELINE -->
+      <article class="team-group-timeline-wrapper">
+        <div class="splash-image-wrapper">
+          <img src="assets/images/splash_image.png"/>
+        </div>
+
+        <div class="teamgroup-post">
+          <h5>Video Post No Caption - Title</h5>
+          <div class="image-post-wrapper">
+            <img src="assets/images/video_post.png"/>
+          </div>
+        </div>
+
+        <div class="teamgroup-post">
+          <h5>Video Post No Caption - Title</h5>
+          <div class="post-text">
+            Authentic freegan kitsch, fanny pack tousled direct trade roof party literally chillwave. Normcore post-ironic umami Tumblr, sartorial meggings lo-fi. Lomo tattooed swag, 90's tofu banjo biodiesel Vice authentic food truck Pitchfork Pinterest meh banh mi wayfarers. Truffaut slow-carb farm-to-table quinoa, VHS selvage gluten-free DIY McSweeney's XOXO tousled. Cosby sweater Banksy Portland normcore, art party four loko chambray tousled. Mlkshk meggings occupy, 3 wolf moon Schlitz Wes Anderson Kickstarter 8-bit pug fap ugh viral Cosby sweater wolf. Portland iPhone fap synth +1 street art PBR tofu next level 8-bit post-ironic.
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <form action="/submitproject" method="POST">
+    <p> Project Name </p>
+    <input type="text" name="project-name"/>
+    <button type="submit">Submit</button>
+  </form> 
+{{else}}
+  <div class="jumbotron">
+    <h1>OF Open User Authentication</h1>
+    <p>Sign in and view your profile!</p>
+    <p>
+      <a href="/signin" class="btn btn-primary btn-lg" role="button">
+        <span class="glyphicon glyphicon-user"></span> 
+        Sign in!
+      </a>
+    </p>
+  </div>
+  
+{{/if}}

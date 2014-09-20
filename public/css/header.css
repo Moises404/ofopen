@@ -5,7 +5,7 @@ html, body {
 }
 
 /* 		  */
-/* ================================================ HEADER */
+/* HEADER */
 /*		  */
 
 .header {
@@ -33,14 +33,26 @@ html, body {
 			.logo {
 				margin: 15px;
 			}
+
+		/*       */
+		/* LOGIN */
+		/*       */
+
+		.login {
+			width: 550px;
+			height: 100px;
+			float: right;
+			/*background: red;*/
+		}
 		.login-wrapper {
 			display: inline-block;
 			position: relative;
 			float: right;
 			width: 470px;
-			height: 100px;
+			height: 50px;
 			margin: 0;
 			padding: 0;
+			/*border: 1px solid black;*/
 			/*background: yellow;*/
 		}
 			.login-wrapper li {
@@ -49,7 +61,7 @@ html, body {
 				float: right;
 				width: 130px;
 				height: 25px;
-				margin: 35px 5px;
+				margin: 10px 5px;
 				border: 1px solid black;
 				font-size: 10px;
 				text-align: center;
@@ -137,6 +149,39 @@ html, body {
 	left: 0;
 	right: 0;
 	width: 1000px;
+}
+
+/* 			*/
+/* USER NAV */
+/* 			*/
+
+li.user-nav {
+	border: none !important;
+}
+
+/* 				 */
+/* SIGN IN MODAL */
+/* 				 */
+
+.background-modal {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+}
+
+.signin-modal {
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin-top: -20%;
+	z-index: 20;
 }
 
 /* ================================================ splash area */

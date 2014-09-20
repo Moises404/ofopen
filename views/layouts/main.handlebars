@@ -1,0 +1,116 @@
+<!-- views/layouts/main.handlebars -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="User Authentication">
+  <meta name="author" content="">
+
+  <title>OF Open</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" type="text/css" href="/css/header.css">
+  <link rel="stylesheet" type="text/css" href="/css/profile.css">
+</head>
+
+  <body>
+
+    <!-- TOP BAR -->
+    <section class="header">
+      <div class="top-header-info">
+        <div class="logo-wrapper">
+          <a href="/">
+            <img class="logo" src="assets/ofopen_logo.png"/>
+          </a>
+        </div>
+        <div class="login">
+          <ul class="login-wrapper">
+            {{!-- <li class="sign-up"><a href="/signin"><span>Sign Up/Login</span></a></li> --}}
+            {{#if user}}
+              <li class="sign-up">
+                <a href="/logout"><span>Log Out</span></a>
+              </li>
+            {{else}}
+              <li><span><a href="/signin">Sign In</span></a></li>
+            {{/if}}
+            <li class="terms">
+              <a href="/rules"><span>Terms + Conditions</span></a>
+            </li>
+            <li class="language">
+              <a href=""><span>Language</span></a>
+            </li>
+          </ul>
+          <ul class="login-wrapper">
+              {{#if user}}
+                <li class="user-nav">
+                  <a href="/profile">
+                    <p>
+                      <strong>Hi,</strong> 
+                      <img src="{{user.avatar}}" width="20" height="20"> 
+                      {{user.username}}
+                    </p>
+                  </a>
+                </li>
+              {{/if}}
+          </ul>
+        </div>
+      </div>
+      <div class="main-nav">
+        <ul>
+          <li class="competition"><span><a href="/competition">COMPETITION</a></span></li>
+          <li class="about"><span><a href="/">ABOUT OF</a></span></li>
+          <li class="toolkits"><span><a href="/toolkits">TOOLKITS</a></span></li>
+          <li class="forum"><span><a href="/rules">FORUM</a></span></li>
+          <li class="projects"><span><a href="/projects">PROJECTS</a></span></li>
+        </ul>
+      </div>
+    </section>
+      
+    {{#if error}}
+      <p class="alert alert-warning">{{error}}</p>
+    {{/if}}
+
+    {{#if success}}
+      <p class="alert alert-success">{{success}}</p>
+    {{/if}}
+
+    {{#if notice}}
+      <p class="alert alert-info">{{notice}}</p>
+    {{/if}}
+
+    <!--where our other templates will insert-->
+    {{{body}}}
+      
+
+    </div>
+
+    <!-- FOOTER -->
+      <section class="footer">
+        <ul class="left-footer">
+        <li>About</li>
+        <li>Competition Rules</li>
+        <li>FAQ</li>
+        </ul>
+        <ul class="right-footer">
+        <li>Facebook Icon</li>
+        <li>Google Icon?</li>
+        <li>Twitter Icon</li>
+        </ul>
+      </section>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
